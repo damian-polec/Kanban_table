@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://images.pexels.com/photos/26301/pexels-photo-26301.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+  background-size: cover;
+}
+.container{
+  width: 100%;
+  padding: 0;
+  background-color: rgba(10, 98, 162, 0.75);
+  color: #fff;
+}
+.container > h1{
+  font-size: 18px;
+  text-shadow: 0 0 2px #000;
+}
+
+.column{
+  position: relative;
+  height: 300px;
+  margin: 20px;
+  padding: 5px;
+  background: rgba(41, 41, 41, 0.7);
+  width: 25%;
+  border-radius: 5px;
+  float: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.column-title{
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.column > .btn-danger{
+  position: relative;
+  top: -85px;
+  left: 0;
+}
+
+.column > .add-card{
+  position: relative;
+  top: -85px;
+}
+
+.btn-danger{
+  white-space: nowrap;
+}
+
+.btn-delete{
+  float: left;
+}
+
+.create-column{
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+li{
+  list-style-type: none;
+  padding: 15px 0;
+}
+
+.column-container{
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ui-sortable{
+  min-height: 60px;
+  padding: 0;
+}
+
+.card-placeholder{
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  border: 2px solid lightgrey;
+  background-color: lightblue;
+}
+
+.card-description{
+  padding-left: 40px;
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 0 0 5px #000;
+  word-wrap: break-word;
+}
